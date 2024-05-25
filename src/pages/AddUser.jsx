@@ -178,7 +178,7 @@ export default function AddUser() {
       setLoading(true);
       const res = await APIs.addNewUser(data);
       toast.success(res?.message);
-      router("/home");
+      router("/");
     } catch (err) {
       setLoading(false);
       toast.error("Something went wrong");

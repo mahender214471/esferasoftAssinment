@@ -94,7 +94,7 @@ export default function Home() {
                       color="blue-gray"
                       className="font-normal"
                     >
-                      {age}
+                      {`${age} years`}
                     </Typography>
                   </td>
                   <td className={classes}>

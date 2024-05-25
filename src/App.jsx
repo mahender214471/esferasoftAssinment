@@ -5,6 +5,7 @@ import DefaultLayout from "./layout/DefaultLayout";
 import Home from "./pages/Home";
 import AddUser from "./pages/AddUser";
 import ViewsAddress from "./pages/ViewAddress";
+import Notfound from "./pages/Notfound";
 export default function App() {
   return (
     <BrowserRouter basename="/">
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/addUser" element={<AddUser />} />
           <Route path="/view-address" element={<ViewsAddress />} />
+          <Route path="*" element={<Notfound />} />
         </Route>
       </Routes>
     </BrowserRouter>
